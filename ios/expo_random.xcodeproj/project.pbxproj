@@ -13,7 +13,9 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		33EADADE83EE277A9749505C /* libPods-expo_random-expo_randomTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE97DCB14283A4B537FC3A6 /* libPods-expo_random-expo_randomTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		851F8523CEC4525111273B0F /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0351180DD5BC5E4E4E1D94 /* ExpoModulesProvider.swift */; };
 		8BDB6C911B14FF1325278FDC /* libPods-expo_random.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3091620B40BEFACE28444EA /* libPods-expo_random.a */; };
+		D50A1F599A6B3F6AB217A5DE /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB72A911D33E52543216AFF /* ExpoModulesProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,7 @@
 		00E356EE1AD99517003FC87E /* expo_randomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = expo_randomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* expo_randomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = expo_randomTests.m; sourceTree = "<group>"; };
+		0FB72A911D33E52543216AFF /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-expo_random/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* expo_random.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = expo_random.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = expo_random/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = expo_random/AppDelegate.m; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = expo_random/main.m; sourceTree = "<group>"; };
 		6ABB817E413C9143333670D9 /* Pods-expo_random-expo_randomTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expo_random-expo_randomTests.debug.xcconfig"; path = "Target Support Files/Pods-expo_random-expo_randomTests/Pods-expo_random-expo_randomTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = expo_random/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F0351180DD5BC5E4E4E1D94 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-expo_random-expo_randomTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		8FE97DCB14283A4B537FC3A6 /* libPods-expo_random-expo_randomTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-expo_random-expo_randomTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B2594951F2DD5BD957F01B /* Pods-expo_random.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expo_random.debug.xcconfig"; path = "Target Support Files/Pods-expo_random/Pods-expo_random.debug.xcconfig"; sourceTree = "<group>"; };
 		C9508D752E5565E77D03356F /* Pods-expo_random-expo_randomTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expo_random-expo_randomTests.release.xcconfig"; path = "Target Support Files/Pods-expo_random-expo_randomTests/Pods-expo_random-expo_randomTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +99,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		08950D0F3CE05E4FE660ACB4 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				9F266A425830719A89910BE7 /* expo_random */,
+				D62A6A948806FD7E3C8AD49E /* expo_randomTests */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* expo_random */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +147,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				06453D16FE3E38EEB25F1BB2 /* Pods */,
+				08950D0F3CE05E4FE660ACB4 /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +161,22 @@
 				00E356EE1AD99517003FC87E /* expo_randomTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9F266A425830719A89910BE7 /* expo_random */ = {
+			isa = PBXGroup;
+			children = (
+				0FB72A911D33E52543216AFF /* ExpoModulesProvider.swift */,
+			);
+			name = expo_random;
+			sourceTree = "<group>";
+		};
+		D62A6A948806FD7E3C8AD49E /* expo_randomTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F0351180DD5BC5E4E4E1D94 /* ExpoModulesProvider.swift */,
+			);
+			name = expo_randomTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* expo_randomTests.m in Sources */,
+				851F8523CEC4525111273B0F /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +444,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				D50A1F599A6B3F6AB217A5DE /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +469,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = expo_randomTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,7 +493,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = expo_randomTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,7 +609,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -636,7 +668,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
